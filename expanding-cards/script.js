@@ -1,14 +1,16 @@
 const panels = document.querySelectorAll(".panel");
 
-panels.forEach((panel) => {
-  panel.addEventListener("click", () => {
+console.log(panels);
+
+panels.forEach((madeUpVariable) => {
+  madeUpVariable.addEventListener("click", () => {
     removeActiveClasses();
-    panel.classList.add("active");
+    madeUpVariable.classList.add("active");
   });
 });
 
 function removeActiveClasses() {
-  panels.forEach((panel) => {
-    panel.classList.remove("active");
+  panels.forEach((madeUpVariable) => {
+    madeUpVariable.classList.remove("active");
   });
 }
